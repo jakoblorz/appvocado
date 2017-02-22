@@ -1,5 +1,5 @@
 # vocado
-validate JSON schema e.g. from user input whether it meets your database models
+validate JSON schema e.g. from user input whether it meets your databases models specification
 
 ## Usage Situation
 Imagine a situation where you just want to implement a **RESTful API** in a lazy manner: database inserts and updates are just the http body.
