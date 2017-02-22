@@ -2,9 +2,9 @@
 validate JSON schema e.g. from user input whether it meets your databases models specification
 
 ## Usage Situation
-Imagine a situation where you just want to implement a **RESTful API** in a lazy manner: database inserts and updates are just the http body.
-Can you be sure that the body does actually match your expected database model, especially when you use a **NoSQL DocumentStore** like MongoDB
-or RethinkDB where models are not supported? 
+Imagine a situation where you just want to implement a **RESTful API** in a lazy manner: 
+database inserts and updates are just the http body. Can you be sure that the body does actually match your expected database model, 
+especially when you use a **NoSQL DocumentStore** like MongoDB or RethinkDB? 
 This is a **lightweight model libary** based on the effort of Evgeny Poberezkin with his [ajv libary](https://github.com/epoberezkin/ajv) for validation,
 that simplifies the usage of database models in typescript environments.
 
@@ -16,6 +16,7 @@ import { Model } from '../../lib/ts-eureka';
 export class UserController extends Model {
 
     constructor(){
+        //call the super with the dedicated ajv schema
         super({
             properties: {
                 name : { type: "string" },
