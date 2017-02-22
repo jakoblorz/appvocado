@@ -1,0 +1,28 @@
+{
+  "name": "appvocado",
+  "version": "0.0.1",
+  "description": "validate JSON schema e.g. from user input whether it meets your database models",
+  "main": "model.ts",
+  "scripts": {
+    "pretest": "tsc test/Model.test.ts",
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jakoblorz/vocado.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jakoblorz/vocado/issues"
+  },
+  "homepage": "https://github.com/jakoblorz/vocado#readme",
+  "dependencies": {
+    "ajv": "^4.11.3",
+    "mocha": "^3.2.0"
+  },
+  "devDependencies": {
+    "@types/mocha": "^2.2.39"
+  }
+}
